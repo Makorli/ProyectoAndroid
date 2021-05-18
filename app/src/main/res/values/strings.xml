@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ProyectoAndroid</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="login_fragment_label">Login</string>
+    <string name="prestamos_fragment_label">Prestamos</string>
+    <string name="SignIn">Sign In</string>
+    <string name="LogIn">Log In</string>
+    <string name="Salir">Salir</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="item">Item</string>
+    <string name="tipo">tipo</string>
+    <string name="persona">persona</string>
+    <string name="a_adir">Añadir</string>
+    <string name="editar">editar</string>
+    <string name="borrar">borrar</string>
+    <string name="a_adir_items">Añadir items</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Persona">Año de la item</string>
+
+    <!-- Strings related to login -->
+    <string name="user">User</string>
+    <string name="password">password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fecha">Fecha</string>
+    <string name="get_date">Get Date</string>
+    <string name="guardar">Guardar</string>
+    <string name="buscar">buscar</string>
+    <string name="salir">Salir</string>
+</resources>

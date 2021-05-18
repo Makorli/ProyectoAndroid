@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Welcome">
+
+    <fragment
+        android:id="@+id/Welcome"
+        android:name="com.example.ProyectoAndroid.WelcomeFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_Welcome_to_PrestamosFragment"
+            app:destination="@id/PrestamosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PrestamosFragment"
+        android:name="com.example.ProyectoAndroid.PrestamosFragment"
+        android:label="@string/prestamos_fragment_label"
+        tools:layout="@layout/fragment_prestamos">
+        <action
+            android:id="@+id/action_PrestamosFragment_to_Welcome"
+            app:destination="@id/Welcome" />
+        <action
+            android:id="@+id/action_PrestamosFragment_to_addPrestamoFragment"
+            app:destination="@id/addPrestamoFragment" />
+        <action
+            android:id="@+id/action_PrestamosFragment_to_managePrestamoFragment"
+            app:destination="@id/managePrestamoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPrestamoFragment"
+        android:name="com.example.ProyectoAndroid.AddPrestamoFragment"
+        android:label="fragment_datos"
+        tools:layout="@layout/fragment_addprestamo" >
+        <action
+            android:id="@+id/action_addPrestamoFragment_to_PrestamosFragment"
+            app:destination="@id/PrestamosFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/managePrestamoFragment"
+        android:name="com.example.ProyectoAndroid.ManagePrestamoFragment"
+        android:label="fragment_manage_prestamo"
+        tools:layout="@layout/fragment_manage_prestamo" >
+        <action
+            android:id="@+id/action_managePrestamoFragment_to_PrestamosFragment"
+            app:destination="@id/PrestamosFragment" />
+    </fragment>
+</navigation>

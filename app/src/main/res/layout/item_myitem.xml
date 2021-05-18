@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/ItemName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:text="Cosa que he prestado"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ItemPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi persona ala que le presto"
+            android:textAlignment="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Item_bt_Editar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:text="Editar"
+                android:textColor="@color/red"
+                android:paddingVertical="0dp"/>
+
+            <TextView
+                android:id="@+id/lt_addPersona_Fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de prestamo"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/Item_bt_retornar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:text="Retornar"
+                android:textColor="@color/red"
+                android:paddingVertical="0dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
