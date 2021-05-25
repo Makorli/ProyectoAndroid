@@ -50,6 +50,8 @@
         tools:layout="@layout/fragment_manage_prestamo" >
         <action
             android:id="@+id/action_managePrestamoFragment_to_PrestamosFragment"
-            app:destination="@id/PrestamosFragment"/>
+            app:destination="@id/PrestamosFragment"
+            app:popUpTo="@+id/managePrestamoFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>
