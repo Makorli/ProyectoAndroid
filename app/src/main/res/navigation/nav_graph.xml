@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_prestamos">
         <action
             android:id="@+id/action_PrestamosFragment_to_Welcome"
-            app:destination="@id/Welcome" />
+            app:destination="@id/Welcome"
+            app:popUpTo="@+id/PrestamosFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_PrestamosFragment_to_addPrestamoFragment"
             app:destination="@id/addPrestamoFragment" />
@@ -37,7 +39,9 @@
         <action
             android:id="@+id/action_addPrestamoFragment_to_PrestamosFragment"
             app:destination="@id/PrestamosFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@+id/addPrestamoFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/managePrestamoFragment"
@@ -46,6 +50,6 @@
         tools:layout="@layout/fragment_manage_prestamo" >
         <action
             android:id="@+id/action_managePrestamoFragment_to_PrestamosFragment"
-            app:destination="@id/PrestamosFragment" />
+            app:destination="@id/PrestamosFragment"/>
     </fragment>
 </navigation>
